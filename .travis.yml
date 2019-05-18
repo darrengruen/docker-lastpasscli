@@ -4,8 +4,5 @@ services:
 before_script:
   - docker login -u ${DOCKER_USERNAME} --password-stdin <<< ${DOCKER_PASSWORD}
 script:
-  - make lint
-  - make build
-  - make test
   - make push
 
