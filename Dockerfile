@@ -28,7 +28,7 @@ RUN apt-get update -y \
 	cmake \
 	pkg-config \
 	wget \
-	&& rm -f /var/lib/apt/lists/*
+	&& rm -rf /var/lib/apt/lists/*
 
 USER lpass
 VOLUME [ "/home/lpass/.lpass" ]
